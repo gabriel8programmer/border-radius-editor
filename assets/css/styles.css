@@ -1,0 +1,108 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #00a, #0aa);
+}
+
+.container-editor {
+    padding: 20px;
+    background-color: #eee;
+    width: 95%;
+    max-width: 450px;
+    min-height: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.container-editor h3 {
+    color: #222;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #222;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-box {
+    align-self: center;
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.container-box input[type="range"]{
+    position: absolute;
+    appearance: none;
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#topleft {
+    top: -10px;
+    left: -10px;
+}
+
+#topright {
+    top: -10px;
+    right: -10px;
+    transform: rotate(180deg);
+}
+
+#bottomleft {
+    bottom: -10px;
+    left: -10px;
+}
+
+#bottomright {
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(180deg);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 64);
+    border-radius: 83% 96% 43% 90%;
+}
+
+.btn-copy {
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 50%;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #222, #555, #777);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    opacity: .8;
+    transition: 1s;
+}
+.btn-copy:hover {
+    opacity: 1;
+}
+
+.input-copy{
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px #000;
+    text-align: center;
+}

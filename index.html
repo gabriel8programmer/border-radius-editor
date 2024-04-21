@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Border Radius</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container-editor">
+        <h3>Editor de Border-radius</h3>
+        <div class="container-box">
+            <input type="range" min="0" max="100" value="0" id="topleft">
+            <input type="range" min="0" max="100" value="0" id="topright">
+            <input type="range" min="0" max="100" value="0" id="bottomleft">
+            <input type="range" min="0" max="100" value="0" id="bottomright">
+            <div class="box" id="box"></div>
+        </div>
+        <input type="text" class="input-copy" readonly>
+        <button class="btn-copy" id="copy">Copiar</button>
+    </div>
+
+</body>
+</html>
